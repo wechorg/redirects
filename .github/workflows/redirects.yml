@@ -1,0 +1,12 @@
+name: redirects
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: "Tests"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: flexera/actions-aws-autoscaler@v2
+        with:
+          aws-region: 'us-east-1'
