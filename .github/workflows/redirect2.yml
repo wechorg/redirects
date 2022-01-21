@@ -1,0 +1,12 @@
+name: redirects2
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: "Tests"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wechuli/composite_simple@main
+        with:
+          who-to-greet: 'Wechuli'
